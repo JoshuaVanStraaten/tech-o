@@ -1679,7 +1679,85 @@ git commit -m "seo: Add robots.txt and update sitemap with current dates"
 
 ---
 
-### Task 11: Final Visual Verification
+### Task 11: Favicon Generation
+
+**Files:**
+- Create: `favicon.ico`
+- Create: `favicon-32x32.png`
+- Create: `favicon-16x16.png`
+- Create: `apple-touch-icon.png`
+- Create: `site.webmanifest`
+
+The existing logo (`images/logo-no-background.png`) needs to be converted into favicon files so the Tech-o logo appears in Google search results, browser tabs, and bookmarks instead of a generic globe icon.
+
+- [ ] **Step 1: Generate favicon files from the logo**
+
+Use ImageMagick (or Python Pillow) to resize the logo into favicon sizes:
+
+```bash
+# Install ImageMagick if not present
+sudo apt-get install -y imagemagick
+
+# Generate favicon sizes from logo
+convert images/logo-no-background.png -resize 16x16 -gravity center -background white -extent 16x16 favicon-16x16.png
+convert images/logo-no-background.png -resize 32x32 -gravity center -background white -extent 32x32 favicon-32x32.png
+convert images/logo-no-background.png -resize 180x180 -gravity center -background white -extent 180x180 apple-touch-icon.png
+convert images/logo-no-background.png -resize 192x192 -gravity center -background white -extent 192x192 images/icon-192x192.png
+convert images/logo-no-background.png -resize 512x512 -gravity center -background white -extent 512x512 images/icon-512x512.png
+convert favicon-32x32.png favicon-16x16.png favicon.ico
+```
+
+If ImageMagick is not available, use Python Pillow as fallback:
+
+```python
+from PIL import Image
+img = Image.open('images/logo-no-background.png')
+# Generate sizes and save
+```
+
+- [ ] **Step 2: Create site.webmanifest**
+
+Create `site.webmanifest`:
+
+```json
+{
+  "name": "Tech-o",
+  "short_name": "Tech-o",
+  "icons": [
+    { "src": "/images/icon-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/images/icon-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#2563EB",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
+```
+
+- [ ] **Step 3: Add favicon link tags to all HTML pages**
+
+Add the following inside `<head>` of every HTML page (index.html, about.html, services.html, contact.html):
+
+```html
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+```
+
+- [ ] **Step 4: Commit**
+
+```bash
+git add favicon.ico favicon-16x16.png favicon-32x32.png apple-touch-icon.png site.webmanifest images/icon-192x192.png images/icon-512x512.png
+git commit -m "seo: Add favicon and web manifest for search result branding
+
+Tech-o logo now appears in Google search results, browser tabs,
+bookmarks, and mobile home screens."
+```
+
+---
+
+### Task 12: Final Visual Verification
 
 **Files:** None (verification only)
 
@@ -1713,6 +1791,7 @@ For each page, check in DevTools Elements panel:
 - JSON-LD script present (homepage: LocalBusiness, services: Service schemas)
 - Canonical URL present
 - All images have descriptive alt text
+- Favicon displays in browser tab (Tech-o logo, not generic globe)
 
 - [ ] **Step 3: Fix any issues found**
 
