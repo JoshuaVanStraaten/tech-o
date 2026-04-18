@@ -311,9 +311,26 @@ nav ul li a.active {
   text-align: center;
   min-height: 100vh;
   padding: 8rem var(--container-pad) 5rem;
-  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #1e40af 70%, #2563eb 100%);
+  background: linear-gradient(135deg, rgba(15,23,42,0.75) 0%, rgba(30,58,95,0.7) 40%, rgba(30,64,175,0.65) 70%, rgba(37,99,235,0.6) 100%),
+              url('../images/hero.jpg') center/cover no-repeat;
   color: var(--color-surface);
   overflow: hidden;
+}
+
+/* Per-page hero backgrounds */
+.about-hero {
+  background: linear-gradient(135deg, rgba(15,23,42,0.8) 0%, rgba(30,58,95,0.7) 40%, rgba(30,64,175,0.65) 70%, rgba(37,99,235,0.6) 100%),
+              url('../images/about-hero.jpg') center/cover no-repeat;
+}
+
+.services-hero {
+  background: linear-gradient(135deg, rgba(15,23,42,0.75) 0%, rgba(30,58,95,0.7) 40%, rgba(30,64,175,0.65) 70%, rgba(37,99,235,0.6) 100%),
+              url('../images/services-hero.jpg') center/cover no-repeat;
+}
+
+.contact-hero {
+  background: linear-gradient(135deg, rgba(15,23,42,0.8) 0%, rgba(30,58,95,0.7) 40%, rgba(30,64,175,0.65) 70%, rgba(37,99,235,0.6) 100%),
+              url('../images/contact-hero.jpg') center/cover no-repeat;
 }
 
 /* Geometric pseudo-element decorations */
@@ -1190,6 +1207,7 @@ footer {
   display: flex;
   gap: var(--space-md);
   flex-wrap: wrap;
+  margin-left: auto;
 }
 
 .footer-nav a {
