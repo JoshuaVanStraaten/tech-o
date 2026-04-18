@@ -1,96 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="cexf26Oz1fwFNxjwVQeetewlBaSI0iy0Xdw448yA-sw" />
-    <title>Tech-o Services</title>
-    <link rel="stylesheet" href="styling/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="cexf26Oz1fwFNxjwVQeetewlBaSI0iy0Xdw448yA-sw" />
+  <title>Services | Tech-o - Telephony, Networking, Security &amp; Web Development</title>
+  <meta name="description" content="Comprehensive IT services: telephony systems, network installation, CCTV surveillance, computer hardware, web design and Android app development in Durban.">
+  <link rel="canonical" href="https://tech-o.co.za/services.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Services | Tech-o - Telephony, Networking, Security &amp; Web Development">
+  <meta property="og:description" content="Comprehensive IT services: telephony systems, network installation, CCTV surveillance, computer hardware, web design and Android app development in Durban.">
+  <meta property="og:image" content="https://tech-o.co.za/images/logo-no-background.png">
+  <meta property="og:url" content="https://tech-o.co.za/services.html">
+  <meta property="og:type" content="website">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styling/styles.css">
+  <!-- JSON-LD BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://tech-o.co.za/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://tech-o.co.za/services.html"
+      }
+    ]
+  }
+  </script>
+  <!-- JSON-LD Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "Service",
+        "position": 1,
+        "name": "Complete Telephony Services",
+        "description": "From traditional PBX systems to modern VoIP solutions, we deliver full-suite telephony services including hardware supply, SIP trunk provisioning, and cloud-hosted platforms. With over 15 years of hands-on experience across Yeastar, Ericsson, Mitel, NEC, and Grandstream, we ensure your business communications run smoothly."
+      },
+      {
+        "@type": "Service",
+        "position": 2,
+        "name": "Professional Network Installation & Maintenance",
+        "description": "We design, install, and maintain robust network infrastructure including fiber optic cabling, managed switches, structured cabling, and wireless access points. Our team ensures your connectivity is fast, secure, and built to scale with your business."
+      },
+      {
+        "@type": "Service",
+        "position": 3,
+        "name": "Advanced Security & Surveillance Systems",
+        "description": "Protect your premises with cutting-edge CCTV and security solutions. We specialise in Hikvision and Dahua camera systems, outdoor beam installations, electric fencing integration, and comprehensive monitoring setups tailored to your security requirements."
+      },
+      {
+        "@type": "Service",
+        "position": 4,
+        "name": "Comprehensive Computer & Hardware Solutions",
+        "description": "Get competitive pricing on a full range of computing equipment including desktops, laptops, servers, peripherals, and enterprise software licensing. We source, configure, and support all your IT hardware needs."
+      },
+      {
+        "@type": "Service",
+        "position": 5,
+        "name": "Web Design & Development",
+        "description": "Stand out online with a custom-designed, responsive website built for your business. We create modern, SEO-optimised websites that look great on every device and help you reach more customers across South Africa."
+      },
+      {
+        "@type": "Service",
+        "position": 6,
+        "name": "Android App Development",
+        "description": "Turn your business idea into a polished Android application. From concept and design through to development and Play Store launch, we build tailored mobile solutions that keep your customers engaged."
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="images/logo-no-background.png" alt="Tech-o Logo">
-            </div>
-            <button class="menu-toggle">☰</button>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home" class="hero services-hero">
-            <h1>Our Services</h1>
-            <p>Explore our comprehensive services designed to keep you connected, secure, and ahead of the curve.</p>
-            <div class="cta-buttons">
-                <button onclick="location.href='contact.html'">Get in Touch</button>
-            </div>
-        </section>
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header>
+    <nav>
+      <div class="logo"><a href="index.html"><img src="images/logo-no-background.png" alt="Tech-o Logo"></a></div>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <section id="services" class="section services">
-            <div class="container">
-                <h2 class="section-title">Solutions Tailored to Your Needs</h2>
-                <div class="services-grid">
-                    <div class="service-item">
-                        <img src="images/pc-icon.png" alt="Comprehensive Computer & Hardware Solutions" class="service-image">
-                        <div class="service-content">
-                            <h3>Comprehensive Computer & Hardware Solutions</h3>
-                            <p>Competitive pricing on all computers, laptops, spares, hardware, and software.
-                                We provide an extensive range of products, ensuring you get the best deals on high-quality tech essentials.</p>
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <img src="images/internet-router-icon.png" alt="Professional Network Installation & Maintenance" class="service-image">
-                        <div class="service-content">
-                            <h3>Professional Network Installation & Maintenance</h3>
-                            <p>Expert installation and maintenance of networks, including fiber, switches, and cabling.
-                                Our team ensures your network infrastructure is robust and reliable, delivering seamless connectivity.</p>
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <img src="images/privacy-private-icon.png" alt="Advanced Security & Surveillance Systems" class="service-image">
-                        <div class="service-content">
-                            <h3>Advanced Security & Surveillance Systems</h3>
-                            <p>Specializing in outdoor beams and camera installations, upgrades for Hikvision and Dahua.
-                                Protect your premises with cutting-edge security solutions tailored to your needs.</p>
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <img src="images/cloud-computing-icon.png" alt="Complete Telephony Services" class="service-image">
-                        <div class="service-content">
-                            <h3>Complete Telephony Services</h3>
-                            <p>Offering a full suite of telephony services, including hardware, SIP trunks, and hosting.
-                                With over 15 years of experience, we deliver reliable and efficient telephony solutions, qualified in multiple brands.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+  <main>
 
-    <footer>
-        <div class="footer-content">
-          <div class="footer-left">
-            <div class="footer-logo">
-              <img src="images/logo-no-background.png" alt="Tech-o Logo">
-            </div>
-            <div class="footer-divider"></div>
-            <div class="footer-contact">
-              <a href="mailto:paul@tech-o.co.za">paul@tech-o.co.za</a>
-              <a href="tel:0311095092">(031) 109 5092</a>
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section class="hero services-hero">
+      <h1>Our Services</h1>
+      <p>Comprehensive technology solutions tailored to your business needs.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICES GRID
+         ============================================================ -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Solutions Tailored to Your Needs</h2>
+        <div class="services-grid">
+
+          <!-- 1: Complete Telephony Services -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-content">
+              <div class="icon-container" style="margin-bottom:var(--space-sm);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6.19 6.19l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <h3>Complete Telephony Services</h3>
+              <p>From traditional PBX systems to modern VoIP solutions, we deliver full-suite telephony services including hardware supply, SIP trunk provisioning, and cloud-hosted platforms. With over 15 years of hands-on experience across Yeastar, Ericsson, Mitel, NEC, and Grandstream, we ensure your business communications run smoothly.</p>
             </div>
           </div>
-          <div class="footer-copyright">
-            © 2024 Tech-o. All rights reserved.
+
+          <!-- 2: Professional Network Installation & Maintenance -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-content">
+              <div class="icon-container" style="margin-bottom:var(--space-sm);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <h3>Professional Network Installation &amp; Maintenance</h3>
+              <p>We design, install, and maintain robust network infrastructure including fiber optic cabling, managed switches, structured cabling, and wireless access points. Our team ensures your connectivity is fast, secure, and built to scale with your business.</p>
+            </div>
           </div>
+
+          <!-- 3: Advanced Security & Surveillance Systems -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-content">
+              <div class="icon-container" style="margin-bottom:var(--space-sm);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3>Advanced Security &amp; Surveillance Systems</h3>
+              <p>Protect your premises with cutting-edge CCTV and security solutions. We specialise in Hikvision and Dahua camera systems, outdoor beam installations, electric fencing integration, and comprehensive monitoring setups tailored to your security requirements.</p>
+            </div>
+          </div>
+
+          <!-- 4: Comprehensive Computer & Hardware Solutions -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-content">
+              <div class="icon-container" style="margin-bottom:var(--space-sm);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <h3>Comprehensive Computer &amp; Hardware Solutions</h3>
+              <p>Get competitive pricing on a full range of computing equipment including desktops, laptops, servers, peripherals, and enterprise software licensing. We source, configure, and support all your IT hardware needs.</p>
+            </div>
+          </div>
+
+          <!-- 5: Web Design & Development -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-content">
+              <div class="icon-container" style="margin-bottom:var(--space-sm);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3>Web Design &amp; Development</h3>
+              <p>Stand out online with a custom-designed, responsive website built for your business. We create modern, SEO-optimised websites that look great on every device and help you reach more customers across South Africa.</p>
+            </div>
+          </div>
+
+          <!-- 6: Android App Development -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-content">
+              <div class="icon-container" style="margin-bottom:var(--space-sm);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              </div>
+              <h3>Android App Development</h3>
+              <p>Turn your business idea into a polished Android application. From concept and design through to development and Play Store launch, we build tailored mobile solutions that keep your customers engaged.</p>
+            </div>
+          </div>
+
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script src="scripts/script.js"></script>
+    <!-- ============================================================
+         CTA BANNER
+         ============================================================ -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2>Ready to Get Started?</h2>
+        <p>Let's talk about your project and find the right solution for your business.</p>
+        <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <div class="footer-logo"><a href="index.html"><img src="images/logo-no-background.png" alt="Tech-o Logo"></a></div>
+        <div class="footer-divider"></div>
+        <div class="footer-contact">
+          <a href="mailto:paul@tech-o.co.za">paul@tech-o.co.za</a>
+          <a href="tel:0311095092">(031) 109 5092</a>
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="container">
+      <p class="footer-copyright">&copy; 2026 Tech-o. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/script.js"></script>
 </body>
 </html>
