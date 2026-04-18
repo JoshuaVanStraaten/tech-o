@@ -1154,8 +1154,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: var(--space-md);
   max-width: var(--container-max);
   margin-inline: auto;
   padding-inline: var(--container-pad);
@@ -1207,7 +1205,10 @@ footer {
   display: flex;
   gap: var(--space-md);
   flex-wrap: wrap;
-  margin-left: auto;
+  margin-inline: 0;
+  max-width: none;
+  padding: 0;
+  justify-content: flex-end;
 }
 
 .footer-nav a {
