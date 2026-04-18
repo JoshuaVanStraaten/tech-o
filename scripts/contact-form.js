@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const originalButtonText = submitButton.textContent;
 
     function showToast(type, message) {
-        toast.className = 'toast toast--' + type;
+        toast.className = 'toast toast--' + type + ' show';
         toast.textContent = message;
         setTimeout(function () {
             toast.className = 'toast';
